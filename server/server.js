@@ -16,9 +16,7 @@ app.use(cors());
 app.use(express.json());
 
 app.get("/", async (req,res)=>{
-    res.status(200).send({
-        message: 'Hello From Codex'
-    });
+    res.status(200).send("Bot Bud Active");
 });
 
 app.post("/", async (req,res) => {
@@ -46,6 +44,6 @@ app.post("/", async (req,res) => {
 })
 
 app.listen(5000, ()=>{
-    console.log("App is running on http://localhost:5000")
+    console.log("App is running successfully")
 })
 
